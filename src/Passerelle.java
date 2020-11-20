@@ -1,3 +1,5 @@
+import org.jetbrains.annotations.Contract;
+
 import java.text.CollationElementIterator;
 import java.util.ArrayList;
 
@@ -6,8 +8,6 @@ public class Passerelle {
     final static Collection<BateauVoyageur> lesBateaux = new Collection<>();
 
     public static ArrayList<Equipement> chargerLesEquipements (int unIdBateau) {
-
-
 
         if ((unIdBateau < lesBateaux.cardinal()) && (unIdBateau >= lesBateaux.cardinal())) {
             System.out.println("Id invalide");
@@ -25,14 +25,12 @@ public class Passerelle {
         return null;
     }
 
-
-
-
-    //public static ArrayList<BateauVoyageur> chargerLesBateauxVoyageurs(){
+    public static ArrayList<BateauVoyageur> chargerLesBateauxVoyageurs(){
 
         // ici on va venir add a les bateau de la bdd "dbBat"dans les bateaux avec lesBateaux.ajouter("bateau de la bdd")
         // on a pas la bdd
-        //jvais faire un truc je reviens après
 
-    //}
+        return null;
+
+    }
 }
