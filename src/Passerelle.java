@@ -28,11 +28,11 @@ public class Passerelle {
 
 
 
-    public static ArrayList<BateauVoyageur> chargerLesBateauxVoyageurs(){
+    //public static ArrayList<BateauVoyageur> chargerLesBateauxVoyageurs(){
 
         // ici on va venir add a les bateau de la bdd "dbBat"dans les bateaux avec lesBateaux.ajouter("bateau de la bdd")
         // on a pas la bdd
         //jvais faire un truc je reviens après
 
-    }
+    //}
 }

@@ -48,14 +48,15 @@ public class BateauVoyageur extends Bateau{
     @Override
     public String versChaine() {
         String SautLigne = System.getProperty("line.separator");
-        String Chaine = super.versChaine() + " Vitesse : " + this.vitesseBatVoy + SautLigne + " Liste des équipements du bateau :" + SautLigne + versChaineEquipement();
+        String Chaine = super.versChaine() + " Vitesse : " + this.vitesseBatVoy + SautLigne + versChaineEquipement();
         return Chaine;
     }
 
     public String versChaineEquipement(){
 
-        String EquipmementString="";
+
         String SautLigne = System.getProperty("line.separator");
+        String EquipmementString=" Liste des équipements du bateau : " + SautLigne;
 
         for (Equipement Equipement:lesEquipement) {
 
