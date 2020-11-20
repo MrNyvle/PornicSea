@@ -5,7 +5,7 @@ public class BateauVoyageur extends Bateau{
 
     private float vitesseBatVoy;
     private String immageBatVoy;
-    private ArrayList<Equipement> lesEquipement = new ArrayList<Equipement>();
+    private ArrayList<Equipement> lesEquipement;
 
 
     public BateauVoyageur(float vitesseBatVoy, String immageBatVoy, ArrayList<Equipement> lesEquipement) {
@@ -19,6 +19,7 @@ public class BateauVoyageur extends Bateau{
         this.vitesseBatVoy = vitesseBatVoy;
         this.immageBatVoy = immageBatVoy;
         this.lesEquipement = lesEquipement;
+
     }
 
     public float getVitesseBatVoy() {
@@ -60,7 +61,7 @@ public class BateauVoyageur extends Bateau{
 
         for (Equipement Equipement:lesEquipement) {
 
-            EquipmementString = EquipmementString + "- " + Equipement.getLibEqui() + SautLigne;
+            EquipmementString = EquipmementString + "- " + Equipement.versChaine() + SautLigne;
 
         }
 

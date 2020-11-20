@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class Passerelle {
 
-    final static Collection<BateauVoyageur> lesBateaux = new Collection<BateauVoyageur>();
+    final static Collection<BateauVoyageur> lesBateaux = new Collection<>();
 
     public static ArrayList<Equipement> chargerLesEquipements (int unIdBateau) {
 
